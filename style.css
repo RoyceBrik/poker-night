@@ -9,9 +9,15 @@ body {
     padding: 20px;
 }
 
+/* Updated heading style */
 h1 {
-    color: #FFD700;
+    color: #fff; /* White text color */
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with transparency */
+    padding: 20px;
+    border-radius: 12px;
+    display: inline-block;
     margin-bottom: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 #winner-bluffer-container {
@@ -31,16 +37,16 @@ h1 {
     background-color: rgba(0, 0, 0, 0.8);
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
-    max-width: 500px; /* Adjusted max width */
+    max-width: 500px;
 }
 
 img {
     border-radius: 15px;
-    width: auto; /* Maintain original aspect ratio */
+    width: auto;
     height: auto;
-    max-width: 100%; /* Limit the width to fit within the container */
-    max-height: 400px; /* Prevent images from being too tall */
-    object-fit: contain; /* Maintain aspect ratio without cropping */
+    max-width: 100%;
+    max-height: 500px;
+    object-fit: contain;
 }
 
 #countdown, #tally, #quotes {
