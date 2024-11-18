@@ -1,8 +1,31 @@
-// Countdown Timer
-const targetDate = new Date("2024-12-01T19:00:00").getTime();
+// Countdown Timer to Next Wednesday at 8 PM PST
+function getNextWednesday() {
+    const now = new Date();
+    const dayOfWeek = now.getDay(); // 0 = Sunday, 6 = Saturday
+    const hourNow = now.getHours();
+    const minuteNow = now.getMinutes();
+    const secondNow = now.getSeconds();
+
+    // Calculate days until next Wednesday
+    let daysUntilWednesday = (3 - dayOfWeek + 7) % 7;
+
+    // If today is Wednesday but it's past 8 PM, set it to the next week
+    if (daysUntilWednesday === 0 && (hourNow > 20 || (hourNow === 20 && (minuteNow > 0 || secondNow > 0)))) {
+        daysUntilWednesday = 7;
+    }
+
+    // Create the date for next Wednesday at 8 PM PST (PST is UTC-8)
+    const nextWednesday = new Date();
+    nextWednesday.setDate(now.getDate() + daysUntilWednesday);
+    nextWednesday.setHours(20, 0, 0, 0); // 8 PM PST
+
+    return nextWednesday;
+}
+
 const timerElement = document.getElementById("timer");
 
 function updateCountdown() {
+    const targetDate = getNextWednesday().getTime();
     const now = new Date().getTime();
     const distance = targetDate - now;
 
@@ -18,19 +41,25 @@ function updateCountdown() {
 
     timerElement.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
 }
-setInterval(updateCountdown, 1000);
 
-// Winner Tally (Sample data)
+// Update the countdown every second
+setInterval(updateCountdown, 1000);
+updateCountdown(); // Initial call to display countdown immediately
+
+// Winner Tally (Sample Data)
 const tally = {
     "john-wins": 5,
     "jane-wins": 3,
     "royce-wins": 7
 };
 for (const key in tally) {
-    document.getElementById(key).textContent = tally[key];
+    const tallyElement = document.getElementById(key);
+    if (tallyElement) {
+        tallyElement.textContent = tally[key];
+    }
 }
 
-// Cycling Quotes
+// Cycling Poker Quotes
 const quotes = [
     "Poker is war. People pretend it is a game.",
     "You will show your poker greatness by the hands you fold, not the hands you play.",
