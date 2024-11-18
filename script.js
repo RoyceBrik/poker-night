@@ -48,9 +48,7 @@ updateCountdown(); // Initial call to display countdown immediately
 
 // Winner Tally
 const tally = {
-    "avi-wins": 5,
-    "jane-wins": 3,
-    "royce-wins": 7
+    "avi-wins": 0,
 };
 for (const key in tally) {
     const tallyElement = document.getElementById(key);
