@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
     text-align: center;
-    background-image: url('/poker-night/poker-background.jpg');
+    background-image: url('poker-background.jpg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -17,41 +17,41 @@ h1 {
 #winner-bluffer-container {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
     margin: 20px auto;
-    max-width: 1400px;
+    max-width: 1200px;
     gap: 40px;
 }
 
 #winner, #bluffer {
     flex: 1;
     text-align: center;
-    margin: 20px;
-    padding: 40px;
-    border: 2px solid #222;
+    padding: 20px;
+    border: 3px solid #FFD700;
     background-color: rgba(0, 0, 0, 0.8);
-    border-radius: 12px;
-    width: 100%; /* Make sections take full width */
-    max-width: 700px; /* Increase max width */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    max-width: 500px; /* Adjusted max width */
 }
 
 img {
-    border-radius: 12px;
-    width: 100%;
+    border-radius: 15px;
+    width: auto; /* Maintain original aspect ratio */
     height: auto;
-    max-height: 600px; /* Ensure images don't get too tall */
+    max-width: 100%; /* Limit the width to fit within the container */
+    max-height: 400px; /* Prevent images from being too tall */
+    object-fit: contain; /* Maintain aspect ratio without cropping */
 }
 
 #countdown, #tally, #quotes {
     margin-top: 30px;
     padding: 20px;
-    border: 2px solid #222;
-    background-color: rgba(34, 34, 34, 0.9); /* Darker semi-transparent background */
+    border: 2px solid #FFD700;
+    background-color: rgba(34, 34, 34, 0.9);
     border-radius: 12px;
-    max-width: 800px; /* Adjusted max width */
-    margin: 20px auto;
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    max-width: 800px;
+    margin: 30px auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
 }
 
 ul {
@@ -61,16 +61,17 @@ ul {
 
 li {
     margin: 10px 0;
+    font-size: 1.2em;
 }
 
 #quotes {
     font-style: italic;
-    font-size: 1.4em;
-    margin-top: 20px;
+    font-size: 1.5em;
+    margin-top: 30px;
 }
 
 #timer {
-    font-size: 2em;
-    color: #FFD700; /* Gold color for the countdown */
-    margin-top: 10px;
+    font-size: 2.2em;
+    color: #FFD700;
+    margin-top: 20px;
 }
