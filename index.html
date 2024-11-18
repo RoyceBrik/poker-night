@@ -8,28 +8,38 @@
 <body>
     <h1>Welcome to Poker Night!</h1>
 
-  <!-- Bluffer of the Week Section -->
-<div id="bluffer">
-    <img src="bluffer.jpeg" alt="Bluffer of the Week" width="200">
-    <p>Bluffer of the Week: [Player's Name]</p>
-</div>
+    <!-- 1. Winner Section -->
+    <div id="winner">
+        <img src="winner.jpeg" alt="Last Week's Winner" width="200">
+        <p>Temporary Winner: [Winner's Name]</p>
+    </div>
 
-<!-- Countdown Timer -->
-<div id="countdown">
-    <h2>Next Poker Night:</h2>
-    <p id="timer"></p>
-</div>
+    <!-- 2. Bluffer Section -->
+    <div id="bluffer">
+        <img src="bluffer.jpeg" alt="Bluffer of the Week" width="200">
+        <p>Bluffer of the Week: [Player's Name]</p>
+    </div>
 
-<!-- Last Week's Winner Section -->
-<div id="winner">
-    <img src="winner.jpeg" alt="Last Week's Winner" width="200">
-    <p>Temporary Winner: [Winner's Name]</p>
-</div>
+    <!-- 3. Countdown Timer -->
+    <div id="countdown">
+        <h2>Next Poker Night:</h2>
+        <p id="timer"></p>
+    </div>
 
-    <!-- Tally Counter -->
+    <!-- 4. Weekly Winner Tally -->
     <div id="tally">
         <h2>Weekly Winner Tally:</h2>
-        <p id="tallyCount">0 Wins</p>
+        <ul id="winner-tally">
+            <li>John: <span id="john-wins">5</span> Wins</li>
+            <li>Jane: <span id="jane-wins">3</span> Wins</li>
+            <li>Royce: <span id="royce-wins">7</span> Wins</li>
+        </ul>
+    </div>
+
+    <!-- 5. Poker Quotes -->
+    <div id="quotes">
+        <h2>Funny Poker Quotes:</h2>
+        <p id="quote"></p>
     </div>
 
     <script src="script.js"></script>
