@@ -48,7 +48,7 @@ updateCountdown(); // Initial call to display countdown immediately
 
 // Winner Tally
 const tally = {
-    "john-wins": 5,
+    "avi-wins": 5,
     "jane-wins": 3,
     "royce-wins": 7
 };
@@ -61,11 +61,22 @@ for (const key in tally) {
 
 // Cycling Poker Quotes
 const quotes = [
-    "Poker is war. People pretend it is a game.",
-    "You will show your poker greatness by the hands you fold, not the hands you play.",
-    "The smarter you play, the luckier you’ll be.",
-    "Trust everyone, but always cut the cards.",
-    "Life is not always a matter of holding good cards, but sometimes, playing a poor hand well."
+    "I never bluff... except when I'm lying about not bluffing.",
+    "The only thing straighter than my poker face is my losing streak.",
+    "Why do they call it a 'river'? Because that’s where all my money goes.",
+    "I told my wife I won at poker. She asked why I was still broke.",
+    "I never fold… unless it’s laundry.",
+    "The only thing I’m good at bluffing is my way out of doing chores.",
+    "In poker, like in life, it's all about timing... and how much coffee you’ve had.",
+    "I'm not addicted to poker, we're just in a committed relationship.",
+    "I'm so good at poker, even my dog doesn't believe my bluffs.",
+    "Aces are like toilet paper... you can never have too many.",
+    "Poker is the only game where you can win big by losing small.",
+    "I have a poker face, but my wallet always gives me away.",
+    "In poker, it's not about winning, it's about making your friends think you're winning.",
+    "Bluffing is like flirting, sometimes you just have to smile and hope for the best.",
+    "You can't lose if you never play… but you also can’t drink beer and pretend you're a high roller.",
+    "I'm raising... because I have absolutely no idea what I'm doing."
 ];
 const quoteElement = document.getElementById("quote");
 
