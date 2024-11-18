@@ -9,7 +9,7 @@ body {
     padding: 20px;
 }
 
-/* Updated heading style to match other sections */
+/* Updated heading style */
 h1 {
     color: #fff; /* White text color */
     background-color: rgba(0, 0, 0, 0.9); /* Black background with transparency */
@@ -34,8 +34,8 @@ h1 {
     flex: 1;
     text-align: center;
     padding: 20px;
-    border: 3px solid #FFD700;
-    background-color: rgba(0, 0, 0, 0.8);
+    border: 3px solid #FFD700; /* Gold border */
+    background-color: rgba(0, 0, 0, 0.8); /* Black background */
     border-radius: 15px;
     box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
     max-width: 500px;
@@ -50,11 +50,32 @@ img {
     object-fit: contain;
 }
 
-#countdown, #tally, #quotes {
+#countdown {
     margin-top: 30px;
     padding: 20px;
     border: 2px solid #FFD700;
-    background-color: rgba(34, 34, 34, 0.9);
+    background-color: rgba(0, 0, 0, 0.9); /* Black background */
+    border-radius: 12px;
+    max-width: 800px;
+    margin: 30px auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+#timer {
+    font-size: 2.2em;
+    color: #fff; /* White text color */
+    margin-top: 20px;
+    background-color: rgba(0, 0, 0, 0.8); /* Black background for timer */
+    padding: 10px;
+    border-radius: 8px;
+    display: inline-block;
+}
+
+#tally, #quotes {
+    margin-top: 30px;
+    padding: 20px;
+    border: 2px solid #FFD700;
+    background-color: rgba(0, 0, 0, 0.9);
     border-radius: 12px;
     max-width: 800px;
     margin: 30px auto;
@@ -75,10 +96,9 @@ li {
     font-style: italic;
     font-size: 1.5em;
     margin-top: 30px;
+    color: #fff;
 }
 
-#timer {
-    font-size: 2.2em;
-    color: #FFD700; /* Gold color for the countdown */
-    margin-top: 20px;
+p {
+    color: #fff; /* Ensures all paragraphs have white text */
 }
