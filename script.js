@@ -46,7 +46,7 @@ function updateCountdown() {
 setInterval(updateCountdown, 1000);
 updateCountdown(); // Initial call to display countdown immediately
 
-// Winner Tally (Sample Data)
+// Winner Tally
 const tally = {
     "john-wins": 5,
     "jane-wins": 3,
